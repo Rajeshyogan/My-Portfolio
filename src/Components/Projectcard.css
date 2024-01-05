@@ -1,0 +1,109 @@
+.list-icon{
+    color: #fff;
+}
+.main-container{
+    border-radius: 5px;
+}
+
+.container-content{
+    border-radius: 8px;
+    margin: 30px auto;
+    width: 300px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.project-img img{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 300px;
+    height: 190px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+     object-fit: fill;
+}
+
+.container-content:hover .project-img img{
+    transform: scale(1.1);
+}
+.container-content:hover{
+    border: 1px solid #ffffffb7;
+}
+
+
+.project-content{
+    background-color: black;
+    margin-top: -6px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 300px;
+    height: 230px;
+}
+.project-content h2{
+    color: rgba(255, 255, 0, 0.906);
+    padding: .6rem .5rem;
+}
+.project-content p{
+     font-size: 17px;
+     /* line-height: 1; */
+     padding: 0 .5rem;
+     color: #fff;
+}
+.project-content ul{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.project-content ul li{
+    background-color: rgb(30, 30, 30);
+    padding: .3rem .4rem;
+    border-radius: 5px;
+    margin: .9rem 0;
+}
+.project-icons{
+    display: flex;
+    justify-content: center;
+}
+.project-icons a{
+    margin-left:  .6rem;
+    margin-right: .6rem;
+    margin-bottom: .3rem;
+}
+@media screen and (max-width:425px){
+    .main-container{
+        padding: .2rem;
+    }
+    .project-img img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:340px){
+    .main-container{
+        padding: .2rem;
+    }
+    .project-img img{
+        width: 240px;
+    }
+    .project-content{
+        width: 240px;
+        height: 145px;
+    }
+    .project-content h2{
+        padding:.2rem .5rem;
+        font-size: 20px;
+    }
+    .project-content p{
+        font-size: 13px;
+        padding: 0 .5rem;
+   }
+   .project-content ul li{
+    background-color: rgba(86, 82, 82, 0.664);
+    border-radius: 5px;
+    font-size: 10px;
+}
+}

@@ -1,0 +1,125 @@
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(13, 13, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero .content{
+    text-align: center;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.hero .right-side{
+    display: block;
+}
+.right-side img{
+    width: 450px;
+    border-radius: 50%;
+}
+.text-style{
+    padding: .4rem 0;
+}
+.text-style h2{
+font-size: 2rem;
+padding:0 1.5rem;
+color: #fff;
+}
+.main-heading .media-style{
+    font-size: 2.9rem;
+    color: yellow;
+}
+.main-heading p{
+    font-size: 2.9rem;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+}
+.text-style span{
+   font-size: 30px;
+   background: linear-gradient(to left,
+   rgb(0, 162, 255),
+   rgb(0, 255, 21));
+-webkit-background-clip: text;
+color: transparent;
+}
+
+.content .description p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  max-width: 500px;
+  text-align: center;
+  color: rgb(192, 186, 186);
+  
+}
+
+.text-style{
+    display: flex;
+    justify-content: center;
+    margin: 29px 0;
+}
+.content .btn{
+    margin: 2rem 0.2rem; 
+}
+
+@media screen and (max-width:640px){
+    .hero{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .hero .content{
+        margin-top: 40px;
+        width: 330px;
+        height: 300px;
+    }
+    .text-style h2{
+        font-size: 1.5rem;
+       padding:0 .4rem;
+    }
+    .text-style span{
+        font-size: 1.5rem;
+    }
+    .main-heading .media-style{
+        font-size: 2.1rem;
+    }
+    .content .description p{
+   margin-top: -20px;
+  font-size: 1.6rem;
+    }
+    .main-heading p{
+        font-size:2.1rem;
+        margin-bottom: -25px;
+        margin-top: 30px;
+    }
+    .hero .right-side{
+         display: block;
+   }
+    .hero .right-side img{
+        width: 320px;
+    margin: 0 auto;
+    border-radius: 50%;
+    }
+}
+@media screen and (max-width:426px){
+    .hero .right-side img{
+        width: 300px;
+    } 
+    .content .description p{
+        margin-top: -20px;
+       font-size: 1.5rem;
+         }
+
+}
+@media screen and (max-width:350px){
+    .hero .right-side img{
+        width: 270px;
+    } 
+    .hero .content h1{
+  font-size: 2.3rem;
+    }
+}

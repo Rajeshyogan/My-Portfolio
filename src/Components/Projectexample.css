@@ -1,0 +1,20 @@
+.projectex-style{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1.4rem 4.4rem;
+    background: #1a1919;
+}
+
+
+@media screen and (max-width:1024px){
+    .projectex-style{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 ;
+    }
+}
+@media screen and (max-width:640px){
+    .projectex-style{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
